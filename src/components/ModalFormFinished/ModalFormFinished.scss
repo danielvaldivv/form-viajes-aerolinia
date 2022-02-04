@@ -1,7 +1,19 @@
 .modalFormFinished {
   position: absolute;
+  left: 25%;
+  right: 25%;
+  border: 1px solid rgba($color: #4e85cc, $alpha: 1.0);
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 3px 3px 20px 10px rgba(0, 0, 0, 0.1) ;
+  margin-top: 50px;
+  height: 60px;
+  display: none;
+}
 
-  & .information{
-    position: relative;
-  }
+.isVisible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
 }

@@ -2,6 +2,8 @@ import React from 'react';
 
 import { dataAirlines } from '../../services/dataAirlines';
 
+import './MenuAirlines.scss'
+
 const menuAirlines = (props) => {
 
   const { setAirlineSelected } = props;
@@ -12,6 +14,7 @@ const menuAirlines = (props) => {
 
   return(
     <nav>
+        <h3>Seleccione su aerolinea de preferencia</h3>
       <ul>
         {
           dataAirlines.map( (item) => (

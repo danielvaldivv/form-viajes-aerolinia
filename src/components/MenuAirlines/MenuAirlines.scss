@@ -1,0 +1,44 @@
+nav {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+
+  & h3 {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & ul {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & li{
+      display: flex;
+
+      & button {
+        padding: 4px 8px;
+        margin: 4px;
+        border: none;
+        border-radius: 8px;
+        background-color: rgba($color: #d2d9e1, $alpha: 1.0);
+      }
+
+      & button:hover {
+        background-color: rgba($color: #88a7ca, $alpha: 1.0);
+      }
+    }
+  }
+}
+
+@media (min-width: 920px) {
+  nav {
+    & ul {
+      flex-direction: row;
+    }
+  }
+}
