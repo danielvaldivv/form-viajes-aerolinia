@@ -33,7 +33,6 @@ const FormUser = (props) => {
     }, 5000);
 
     event.target.reset()
-
   };
 
   return (
