@@ -8,20 +8,18 @@ import ModalFormFinished from './components/ModalFormFinished/ModalFormFinished'
 import './App.scss'
 
 const App = () => {
-  const [airlineSelected, setAirlineSelected] = useState('____');
+  const [airlineSelected, setAirlineSelected] = useState(null);
 
-  const [isVisibleModal, setVisibleModal] = useState(false);
-
-  console.log(airlineSelected);
+  const [visibleModal, setVisibleModal] = useState(false);
 
   return (
     <div className='App'>
-      <div className={`${isVisibleModal=== true && 'opacityTrue'} `}>
+      <div className={`${visibleModal && 'opacityTrue'} `}>
         <MenuAirlines setAirlineSelected={setAirlineSelected} />
         <WelcomeMessage airlineSelected={airlineSelected} />
         <FormUser setVisibleModal={setVisibleModal} airlineSelected={airlineSelected} />
       </div>
-      <ModalFormFinished isVisibleModal={isVisibleModal} />
+      <ModalFormFinished visibleModal={visibleModal} />
     </div>
   );
 }

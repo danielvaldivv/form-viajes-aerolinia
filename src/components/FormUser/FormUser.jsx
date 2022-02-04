@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import './FormUser.scss'
 
 const FormUser = (props) => {
-  const { setVisibleModal } = props;
+  const { setVisibleModal, airlineSelected } = props;
 
   const [ userInfo, setUserInfo ]  = useState({
     name: '',
@@ -24,7 +24,9 @@ const FormUser = (props) => {
 
     event.preventDefault()
 
-    console.log(userInfo)
+    console.log('User: ',userInfo)
+    console.log('airline: ',airlineSelected);
+
 
     setVisibleModal(true)
 

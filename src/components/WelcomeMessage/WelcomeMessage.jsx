@@ -8,7 +8,7 @@ const WelcomeMessage = (props) => {
   return (
     <div className='message'>
       <p>Hola</p>
-      <p>Bienvenido, sabemos que quieres viajar en un <span>{airlineSelected}</span>, por favor diligencia el siguiente fomulario.</p>
+      <p>Bienvenido, sabemos que quieres viajar en un <span>{airlineSelected || '____'}</span>, por favor diligencia el siguiente fomulario.</p>
     </div>
   );
 };
